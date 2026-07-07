@@ -14,4 +14,8 @@ public class Employees {
         }
         return empList;
     }
+
+    public void setEmpList(List<Employee> empList) {
+        this.empList = empList;
+    }
 }
