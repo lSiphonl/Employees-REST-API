@@ -16,7 +16,7 @@ public class EmployeeDAO {
             .add(new Employee(3, "Rajesh", "Cootherpally", "rcootherpally@gmail.com"));
     }
 
-    public Employees getEmployees() {
+    public Employees getAllEmployees() {
         return employees;
     }
 
