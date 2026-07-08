@@ -41,5 +41,4 @@ public class EmpController {
         
         return ResponseEntity.created(location).build();
     }
-
 }
