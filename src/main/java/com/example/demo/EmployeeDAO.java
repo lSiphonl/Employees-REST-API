@@ -9,11 +9,11 @@ public class EmployeeDAO {
     static {
         //sample employees
         employees.getEmpList()
-            .add(new Employee(1, "Graham", "Robert", "gqr@gmail.com"));
+            .add(new Employee(1, "Graham", "Robert", "gqr@gmail.com", "Software Engineer"));
         employees.getEmpList()
-            .add(new Employee(2, "Smith", "John", "jsmith@gmail.com"));
+            .add(new Employee(2, "Smith", "John", "jsmith@gmail.com", "Sales Manager"));
         employees.getEmpList()
-            .add(new Employee(3, "Rajesh", "Cootherpally", "rcootherpally@gmail.com"));
+            .add(new Employee(3, "Rajesh", "Cootherpally", "rcootherpally@gmail.com", "HR Specialist"));
     }
 
     public Employees getAllEmployees() {

@@ -5,17 +5,17 @@ import java.util.List;
 
 //Storage class for Employee objects
 public class Employees {
-    private List<Employee> empList;
+    private List<Employee> employees;
 
     //get emp list - init if null
     public List<Employee> getEmpList() {
-        if (empList == null) { 
-            empList = new ArrayList<>();
+        if (employees == null) { 
+            employees = new ArrayList<>();
         }
-        return empList;
+        return employees;
     }
 
     public void setEmpList(List<Employee> empList) {
-        this.empList = empList;
+        this.employees = empList;
     }
 }

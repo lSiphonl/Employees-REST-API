@@ -18,7 +18,7 @@ public class EmpController {
     @Autowired
     private EmployeeDAO employeeDao;
 
-    @GetMapping("/")
+    @GetMapping
     public Employees getEmployees() {
         return employeeDao.getAllEmployees();
     }
