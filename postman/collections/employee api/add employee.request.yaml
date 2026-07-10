@@ -1,0 +1,15 @@
+$kind: http-request
+method: POST
+url: 'http://localhost:8080/employees/'
+order: 2000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com"
+    }

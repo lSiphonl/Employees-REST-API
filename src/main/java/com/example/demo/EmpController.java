@@ -28,7 +28,7 @@ public class EmpController {
         
         //Generate new ID for new employee
         Integer id = employeeDao.getAllEmployees().getEmpList().size() + 1;
-        employee.setId(id);
+        employee.setEmployeeId(id);
 
         employeeDao.addEmployee(employee);
 
@@ -36,7 +36,7 @@ public class EmpController {
         URI location = ServletUriComponentsBuilder
             .fromCurrentRequest()
             .path("/{id}")
-            .buildAndExpand(employee.getId())
+            .buildAndExpand(employee.getEmployeeId())
             .toUri();
         
         return ResponseEntity.created(location).build();
